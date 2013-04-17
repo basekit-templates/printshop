@@ -1,8 +1,7 @@
 {
 	"name":"Print Shop",
-	"directory":"printshop",
-	"thumbnail":"/printshop/printshop.jpg",
-	"screenshot":"/printshop/printshop.jpg",
+	"thumbnail":"printshop.jpg",
+	"screenshot":"printshop.jpg",
 	"pageTypes":[],
 	"defaultColorSwatch":"Bright 3",
 	"defaultFontSwatch":"PT Sans Narrow"
