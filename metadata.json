@@ -3,9 +3,9 @@
 	"thumbnail":"printshop.png",
 	"screenshot":"printshop.png",
     "tags": {
-        "en": ["professional", "clean", "business", "modern"],
-        "es": ["profesional", "limpio", "corporativo", "moderno"],
-        "br": ["profissional", "limpo", "corporativo", "moderno"]
+        "en": ["professional", "clean", "business", "modern", "newspaper", "agency", "leaflet", "creative", "elegant", "professional", "sophisticated", "media", "sans-serif"],
+        "es": ["profesional", "limpio", "corporativo", "moderno", "periodico", "agencia", "folleto", "creativo", "elegante", "profesional", "sofisticado", "comunicacion", "sans-serif"],
+        "br": ["profissional", "limpo", "corporativo", "moderno", "jornal", "agência", "folheto", "criativo", "elegante", "profissional", "sofisticado", "mídia", "sans-serif"]
     },
     "colorSwatches":
     {
