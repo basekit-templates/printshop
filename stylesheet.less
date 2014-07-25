@@ -24,7 +24,10 @@ body {
    =============================== */
 
 .main {
-    padding: 2em 0
+    padding: 2em 0;
+    .widget {
+        clear: both;
+    }
 }
 
 body.edit .widget.navigation, body.edit .widget.extendednavigation {
@@ -970,7 +973,6 @@ hr.line.align-right {
     background-position: 10px center;
     background-repeat: no-repeat;
     background-color: @font-swatch7-background-color;
-
     font-family: @font-swatch7-font-family;
     font-size: .75em;
     font-weight: @font-swatch7-font-weight;
@@ -1036,7 +1038,8 @@ hr.line.align-right {
     background-color: @font-swatch7-background-color;
     background-repeat: no-repeat;
     background-position: center;
-        text-indent: -99999px;
+    text-indent: 99999px;
+    overflow: hidden;
     white-space: nowrap;
 }
 
