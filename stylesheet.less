@@ -738,7 +738,6 @@ hr.line.align-right {
     background-size: 7px;
     background-position: left center;
     background-repeat: no-repeat;
-    padding: 4px 0 4px 18px;
     font-family: @font-swatch5-font-family;
     font-size: @font-swatch5-font-size;
     font-weight: @font-swatch5-font-weight;
@@ -746,64 +745,51 @@ hr.line.align-right {
     color: @font-swatch5-color;
     letter-spacing: @font-swatch5-letter-spacing;
     text-decoration: none;
+    padding: 4px 0 4px 18px;
 }
 
 .widget.clicktocall a:hover {
     cursor: pointer;
-}
-
-.widget.clicktocall a:active {
-    box-shadow: inset 0 2px 3px rgba(0,0,0,0.1)
+    background-image: image('/images/ic-call-desktop.svg');
 }
 
 
 /* ===============================
-   TWITTER FULL
+   TWITTER
    =============================== */
 
-.widget.twitter {
-    padding: 20px 0
-}
-
-.widget.twitter a {
-    color: @color-swatch4;
-    font-size: @font-swatch5-font-size;
-    text-decoration: none;
-}
-
-.widget.twitter a:hover {
-    text-decoration: underline
-}
-
-.widget.twitter ul {
-    padding: 0px;
-    margin: 0;
-}
-
-.widget.twitter ul li {
-    border-bottom: none;
-    list-style: none;
-    font-family: @font-swatch5-font-family;
-    font-size: @font-swatch5-font-size;
-    color: @font-swatch5-color;
-    padding-bottom: 30px;
-}
-
-.widget.twitter ul li:last-child {
-    padding-bottom: 0px
-}
-
-.widget.twitter .twitter-profile-pic {
-    float: left;
-    margin-right: 20px;
-}
-
-.widget.twitter .twitter-content span.bk-full-name {
-    font-family: @font-swatch4-font-family;
+.widget.twitter .bk-full-name {
     color: @color-swatch3;
-    font-weight: bold;
 }
 
+.widget.twitter ul li span a {
+    color: @color-swatch3;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+ul.twitter {
+    .twitter-profile-pic {
+        margin-right: 10px;
+        margin-top: 2px;
+        a img {
+            width: 48px;
+        }
+    }
+    .twitter-content {
+        padding-left: 68px;
+        p {
+            padding-bottom: 0;
+        }
+    }
+}
+
+.twitter div.twitter-profile-pic a,
+div.twitter-profile-pic {
+  line-height: 0;
+}
 
 /* ===============================
    CONTACT FORM
@@ -1034,6 +1020,10 @@ hr.line.align-right {
     white-space: nowrap;
 }
 
+.main .widget.profile .bk-profile-socialicons span a {
+    box-shadow: none;
+}
+
 .widget.profile .bk-profile-socialicons span a {
     background-color: @font-swatch7-background-color;
     box-shadow: 0 0 0 3px rgba(110,110,110,0.3);
@@ -1206,6 +1196,8 @@ footer.bk-footer .footer2 .widget.profile form {
   -webkit-border-radius: 3px;
    -moz-border-radius: 3px;
         border-radius: 3px;
+    margin-right: 5px;
+    margin-bottom: 10px;
 }
 
 .widget.profile form input:focus {
@@ -1225,7 +1217,7 @@ footer.bk-footer .footer2 .widget.profile form {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-    box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.2), 0 0 0 3px rgba(61,61,61,0.2);
+    box-shadow: none;
     text-decoration: none;
     text-shadow: 0 1px 0px rgba(0,0,0,0.2);
 }
@@ -1235,13 +1227,6 @@ footer.bk-footer .footer2 .widget.profile form {
     cursor: pointer;
 }
 
-/* ===============================
-   MAP WIDGET
-   =============================== */
-
-.widget.map {
-
-}
 
 /* ===============================
    SIGNUP FORM WIDGET
@@ -1280,6 +1265,8 @@ footer.bk-footer .footer2 .widget.profile form {
     -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
           border-radius: 3px;
+    margin-right: 5px;
+    margin-bottom: 10px;
 }
 
 .widget.signupform fieldset input:focus {
@@ -1790,7 +1777,6 @@ footer.bk-footer .footer2 .widget.profile form {
 @media only screen and (max-width: 768px) { 
     header.bk-header {
         padding: 38px 0 0;
-        border-bottom: 0;
     }
 
     .companyheader {
@@ -2005,14 +1991,12 @@ footer.bk-footer .footer2 .widget.profile form {
         background-position: 14px center;
         background-repeat: no-repeat;
         background-color: @font-swatch7-background-color;
-
         font-family: @font-swatch7-font-family;
         font-size: .75em;
         font-weight: @font-swatch7-font-weight;
         line-height: @font-swatch7-line-height;
         color: @font-swatch7-color;
         letter-spacing: @font-swatch7-letter-spacing;
-        background-color: @font-swatch7-background-color;
         padding: 12px 12px 12px 34px;
         border: 1px solid darken(@color-swatch3,5%);
         -webkit-border-radius: 3px;
@@ -2026,6 +2010,11 @@ footer.bk-footer .footer2 .widget.profile form {
     .widget.clicktocall a:hover {
         background-color: @font-swatch7-background-color-hover;
         cursor: pointer;
+        padding: 12px 12px 12px 34px;
+        background-image: image('/images/ic-call.svg');
+        background-size: 7px;
+        background-position: 14px center;
+        background-repeat: no-repeat;
     }
 
     .widget.clicktocall a:active {
@@ -2048,11 +2037,16 @@ footer.bk-footer .footer2 .widget.profile form {
 max-height: 150px;
 }
 
-    .widget.gallery ul.gallery-widget li
-    {
-      width: 50%;
-      padding-bottom: 50%;
-    }
+.widget.gallery ul.gallery-widget li {
+    width: 50%;
+    padding-bottom: 50%;
+}
+
+ /* FORMS */
+
+.widget.signupform form fieldset input, .widget.profile form fieldset input {
+    width: 100%;
+}
 
 }
 
