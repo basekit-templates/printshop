@@ -42,7 +42,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
    =============================== */
 
 header.bk-header {
-    padding: 40px 0;
+    padding: 40px 0 20px;
     background-color: @color-swatch7;
 }
 
@@ -53,6 +53,13 @@ header.bk-header {
 }
 
 /* COMPANY NAME */
+
+.widget {
+    &.logo, &.companyname {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
 
 .widget.companyname {
     display: block;
@@ -165,6 +172,11 @@ footer.bk-footer .footer2 .columns-two-right {
 .widget.extendednavigation {
     position: relative;
     margin: 4px 0;
+    max-width: 70%;
+    float: right;
+    @media only screen and (max-width: 1140px) { 
+        max-width: 100%;
+    }
 }
 
 .widget.extendednavigation a.pull {
@@ -1787,10 +1799,9 @@ footer.bk-footer .footer2 .widget.profile form {
         border-bottom: 0;
     }
 
-    .widget.companyheader {
-        width: 100%;
-        display: block;
-        margin: 0 auto;
+    .companyheader {
+        max-width: 90%;
+        padding-bottom: 20px;
     }
 
     /* NAV */
@@ -1798,11 +1809,8 @@ footer.bk-footer .footer2 .widget.profile form {
     .widget.extendednavigation {
         width: 100%;
         padding: 10px 0;
-    }
-
-    .widget.extendednavigation {
         display: block;
-        width: 100%;
+        float: none;
     }
 
      /* NAV ICON */
@@ -1811,7 +1819,7 @@ footer.bk-footer .footer2 .widget.profile form {
     display: block;
     width: 100%;
     position: absolute;
-    top: 10px;
+    top: 12px;
   }
 
     .widget .extendednavigation a.pull:after {
@@ -1837,7 +1845,7 @@ footer.bk-footer .footer2 .widget.profile form {
 
   .widget.extendednavigation ul li {
   border-bottom: 1px solid @color-swatch2;
-  padding: 16px 0;
+  padding: 3px 0;
   }
 
   .widget.extendednavigation ul li:hover .text {
@@ -1853,7 +1861,7 @@ footer.bk-footer .footer2 .widget.profile form {
   }
 
   .widget.extendednavigation ul li.folder {
-    padding: 16px 0;
+    padding: 3px 0;
   }
 
   .widget .extendednavigation li {
@@ -1866,11 +1874,6 @@ footer.bk-footer .footer2 .widget.profile form {
       margin: 0;
   }
 
-  .widget .extendednavigation ul li.folder:after {
-    left: 5px;
-    right: inherit;
-  }
-
   .widget.extendednavigation ul li > ul {
       display: none!important;
   }
@@ -1878,12 +1881,13 @@ footer.bk-footer .footer2 .widget.profile form {
   .widget.extendednavigation ul li:hover > ul {
       display: block!important;
       width: 100%;
-      margin: 16px 0;
+      margin: 3px 0;
       padding: 0;
   }
 
   .widget.extendednavigation ul li:hover > ul > li {
     border-bottom: none;
+    padding: 3px;
   }
 
   .widget.extendednavigation ul li:hover > ul > li .text {
@@ -1899,17 +1903,25 @@ footer.bk-footer .footer2 .widget.profile form {
   }
 
   .widget.extendednavigation ul li:hover > ul li:first-child {
-    padding-top: 16px;
     border-top: none;
   }
 
-    .widget.extendednavigation ul li:hover > ul li:last-child {
-    padding-top: 16px;
+  .widget.extendednavigation ul li.folder .text {
+    padding: 5px 20px 5px 0;
   }
 
-  .widget.extendednavigation li:hover > ul > li > a {
-    padding-left: 10px;
+  div.widget .extendednavigation ul.align-center, div.widget.extendednavigation ul.align-center {
+    float: left;
+        li.folder .text {
+            padding: 5px 0;
+        }
   }
+
+.widget.extendednavigation ul li.folder ul li .text {
+    padding: 5px 10px;
+}
+
+  
 
 
     /* FEATURE */
