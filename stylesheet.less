@@ -14,6 +14,10 @@ body {
     padding: 0;
 }
 
+a {
+    color: darken(@color-swatch3,20%);
+}
+
 .wrapper {
     width: 90%;
     margin: 0 5%;
@@ -286,7 +290,7 @@ footer.bk-footer .footer2 .columns-two-right {
 
 .extendednavigation ul li.selected, .extendednavigation ul li:hover ul li.selected, .extendednavigation ul li.folder.selected ul li.selected, .extendednavigation ul li.folder.selected {
     a, .text {
-        color: @font-swatch6-color-hover;
+        color: darken(@color-swatch3,20%);
     }
 }
 
@@ -759,11 +763,15 @@ hr.line.align-right {
    =============================== */
 
 .widget.twitter .bk-full-name {
-    color: @color-swatch3;
+    color: darken(@color-swatch3,20%);
+    &:hover {
+        text-decoration: underline;
+        color: @color-swatch3;
+    }
 }
 
 .widget.twitter ul li span a {
-    color: @color-swatch3;
+    color: darken(@color-swatch3,20%);
     text-decoration: none;
     &:hover {
         text-decoration: underline;
@@ -773,7 +781,7 @@ hr.line.align-right {
 ul.twitter {
     .twitter-profile-pic {
         margin-right: 10px;
-        margin-top: 2px;
+        margin-top: 4px;
         a img {
             width: 48px;
         }
@@ -782,6 +790,9 @@ ul.twitter {
         padding-left: 68px;
         p {
             padding-bottom: 0;
+        }
+        time {
+            font-size: @font-swatch5-font-size;
         }
     }
 }
@@ -1325,7 +1336,7 @@ footer.bk-footer .footer2 .widget.profile form {
     }
 
     .main {
-        width: 90%;
+        width: 100%;
         padding-top:30px;
         margin: 0 auto;
             @media only screen and (max-width: 1084px) {
@@ -1400,7 +1411,7 @@ footer.bk-footer .footer2 .widget.profile form {
                     &.menu-item-promoted { /* menu-item-promoted */
                         padding: 1.2em;
                         margin: 11px 1px 20px;
-                        border: 5px solid @color-swatch3;
+                        border: 1px solid @color-swatch3;
                         -webkit-border-radius: 3px;
                         -moz-border-radius: 3px;
                         border-radius: 3px;
