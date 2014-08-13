@@ -609,16 +609,8 @@ hr.line.align-right {
    =============================== */
 
 .widget.gallery {
-    margin: 20px 0 20px -0.5%;
+    margin: 20px 0;
     ul li {
-        @media @tablet {
-            width: 50%;
-            padding-bottom: 50%;
-        }
-        @media @mobile {
-            width: 100%;
-            padding-bottom: 100%;
-        }
         span.inner {
             .title,
             .description {
@@ -701,46 +693,54 @@ hr.line.align-right {
 /* ===============================
    TWITTER
    =============================== */
-
-.widget.twitter .bk-full-name {
-    color: darken(@color-swatch3,20%);
-    &:hover {
-        text-decoration: underline;
-        color: @color-swatch3;
-    }
-}
-
-.widget.twitter ul li span a {
-    color: darken(@color-swatch3,20%);
-    text-decoration: none;
-    &:hover {
-        text-decoration: underline;
-    }
-}
-
-ul.twitter {
-    .twitter-profile-pic {
-        margin-right: 10px;
-        margin-top: 4px;
-        a img {
-            width: 48px;
+.widget.twitter {
+    .bk-full-name {
+        color: darken(@color-swatch3,20%);
+        &:hover {
+            text-decoration: underline;
+            color: @color-swatch3;
+        }
+    }    
+    ul li span a {
+        color: darken(@color-swatch3,20%);
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
         }
     }
-    .twitter-content {
-        padding-left: 68px;
-        p {
-            padding-bottom: 0;
+    ul.twitter {
+        .twitter-profile-pic {
+            margin-right: 10px;
+            margin-top: 4px;
+            a img {
+                width: 48px;
+            }
         }
-        time {
-            font-size: @font-swatch5-font-size;
+        .twitter-content {
+            padding-left: 68px;
+            p {
+                padding-bottom: 0;
+            }
+            time {
+                font-size: @font-swatch5-font-size;
+            }
         }
+    }
+    .twitter div.twitter-profile-pic a,
+    div.twitter-profile-pic {
+      line-height: 0;
     }
 }
 
-.twitter div.twitter-profile-pic a,
-div.twitter-profile-pic {
-  line-height: 0;
-}
+
+
+
+
+
+
+
+
+
 
 /* ===============================
    CONTACT FORM
