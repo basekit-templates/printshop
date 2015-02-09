@@ -437,6 +437,9 @@ footer.bk-footer .footer2 .columns-two-right {
     border-radius: 4px;
     cursor: pointer;
     display: inline-block;
+    .more, .less {
+        color: @font-swatch7-color;
+    }
 }
 
 .widget.content span.expand:hover,
@@ -700,7 +703,7 @@ hr.line.align-right {
             text-decoration: underline;
             color: @color-swatch3;
         }
-    }    
+    }
     ul li span a {
         color: darken(@color-swatch3,20%);
         text-decoration: none;
@@ -999,7 +1002,7 @@ footer.bk-footer .footer2 .widget.profile .bk-profile-socialicons {
 }
 
 .widget.socialicons span a:hover,
-.widget.profile 
+.widget.profile
 .bk-profile-socialicons span a:hover {
     background-color: @font-swatch7-background-color-hover
 }
@@ -1325,7 +1328,7 @@ footer.bk-footer .footer2 .widget.profile form {
                     &.menu-item-promoted { /* menu-item-promoted */
                         display: inline-block;
                         .inner-item {
-                            &:before { 
+                            &:before {
                                 content: "\2605";
                                 font-size: 20px;
                                 position: absolute;
@@ -1338,7 +1341,7 @@ footer.bk-footer .footer2 .widget.profile form {
                                 padding-left: 25px;
                                 color: @color-swatch3;
                             }
-                        }  
+                        }
                     }/* end menu-item-promoted */
                     .inner-item {
                         .menu-item-image-wrap {
@@ -1373,7 +1376,7 @@ footer.bk-footer .footer2 .widget.profile form {
                                 margin-bottom: 5px;
                                 padding: 0 3px;
                                 position: relative;
-                                &:before { 
+                                &:before {
                                     content: "\2605";
                                     font-size: 8px;
                                     position: absolute;
@@ -1393,7 +1396,7 @@ footer.bk-footer .footer2 .widget.profile form {
             .menu-subsection {
                 padding: 0;
                 margin: 0;
-                .menu-subsection-promoted { /* PROMOTED SUB-SECTION */ 
+                .menu-subsection-promoted { /* PROMOTED SUB-SECTION */
                     border: 1px solid darken(@color-swatch2,3%);
                     background-color: lighten(@color-swatch2,2%);
                     padding: 0 2em 2em;
@@ -1733,7 +1736,7 @@ footer.blog-post-metadata time {
         display: inline-block;
         @media @mobile {
             width: 100%;
-        }       
+        }
     }
 }
 
@@ -1767,7 +1770,7 @@ select[name="displayCount"] {
 }
 
 .widget.ecomproductslist .productlist-filter .productlist-display-form .form-group.productlist-search {
-    input { 
+    input {
         height: 35px;
         background-color: @color-swatch2;
         border: 1px solid darken(@color-swatch2,4%);
@@ -2174,7 +2177,7 @@ a.ecom-product-go-to-checkout-btn {
    IPAD WIDTH
    =============================== */
 
-@media only screen and (max-width: 768px) { 
+@media only screen and (max-width: 768px) {
     header.bk-header {
         padding: 38px 0 0;
     }
@@ -2217,7 +2220,7 @@ a.ecom-product-go-to-checkout-btn {
 
   /* NAV */
 
-  
+
  .widget .extendednavigation ul {
     width: 100%;
     display: none;
@@ -2324,7 +2327,7 @@ a.ecom-product-go-to-checkout-btn {
 
     /* SLIDESHOW */
 
-    .widget.responsiveslideshow .slideshow-image-list, 
+    .widget.responsiveslideshow .slideshow-image-list,
     .widget.responsiveslideshow .slideshow-widget {
         height:350px;
     }
@@ -2335,7 +2338,7 @@ a.ecom-product-go-to-checkout-btn {
    IPHONE WIDTH
    =============================== */
 
-@media only screen and (max-width: 480px) { 
+@media only screen and (max-width: 480px) {
 
     footer.bk-footer {
         padding: 2.5em 0 0;
@@ -2421,7 +2424,7 @@ a.ecom-product-go-to-checkout-btn {
   .widget.responsiveslideshow .description {
     display:none;
   }
- 
+
  /* FORMS */
 
 .widget.signupform form fieldset input, .widget.profile form fieldset input {
@@ -2430,7 +2433,7 @@ a.ecom-product-go-to-checkout-btn {
 
 }
 
-@media only screen and (min-width: 1140px) { 
+@media only screen and (min-width: 1140px) {
     .wrapper {
         width: 960px;
         /* 1140px - 10% for margins */
