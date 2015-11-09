@@ -746,10 +746,17 @@ hr.line.align-right {
 
 
 /* ===============================
-   CONTACT FORM
+   CONTACT/FONECTA FORM
    =============================== */
 
-.widget.contactform form {
+
+.widget.fonectacontactform .form-group {
+    margin-bottom: 0;
+}
+
+
+.widget.contactform form,
+.fonectacontactform form {
     background-color: @color-swatch2;
     padding: 20px;
     margin: 20px 0;
@@ -758,12 +765,14 @@ hr.line.align-right {
     border-radius: 2px;
 }
 
-.widget.contactform fieldset {
+.widget.contactform fieldset,
+.fonectacontactform fieldset {
     border: none;
     padding: 0;
 }
 
-.widget.contactform fieldset label {
+.widget.contactform fieldset label,
+.fonectacontactform label {
     width: 100%;
     float: left;
     font-family: @font-swatch4-font-family;
@@ -774,7 +783,8 @@ hr.line.align-right {
     letter-spacing: 1px;
 }
 
-.widget.contactform fieldset input {
+.widget.contactform fieldset input,
+.fonectacontactform input {
     height: 40px;
     width: 100%;
     border: 1px solid lighten(@color-swatch4,60%);
@@ -793,7 +803,8 @@ hr.line.align-right {
     padding: 0;
 }
 
-.widget.contactform fieldset textarea {
+.widget.contactform fieldset textarea,
+.fonectacontactform textarea {
     height: 100px;
     width: 100%;
     border: 1px solid lighten(@color-swatch4,60%);
@@ -813,7 +824,8 @@ hr.line.align-right {
     resize: none;
 }
 
-.widget.contactform fieldset button.btn {
+.widget.contactform fieldset button.btn,
+.fonectacontactform button.btn {
     padding: 4px 8px;
     font-family: @font-swatch7-font-family;
     font-size: .75em;
@@ -831,7 +843,8 @@ hr.line.align-right {
     text-shadow: 0 1px 0px rgba(0,0,0,0.2);
 }
 
-.widget.contactform fieldset button.btn:hover {
+.widget.contactform fieldset button.btn:hover,
+.fonectacontactform button.btn:hover {
     background-color: @font-swatch7-background-color-hover;
     cursor: pointer;
 }
@@ -858,6 +871,23 @@ hr.line.align-right {
 
 .widget.contactform fieldset button.btn.bold {
     font-weight: bold
+}
+
+// Fonecta checkboxes
+
+.fonectacontactform {
+    input[type="checkbox"] {
+        height: auto;
+        width: auto;
+        display: inline;
+        margin: 0 10px 0 0;
+    }
+
+    fieldset label {
+        width: auto;
+        float: none;
+        vertical-align: middle;
+    }
 }
 
 /* ===============================
