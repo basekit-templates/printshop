@@ -86,6 +86,10 @@ header.bk-header {
 
 .widget.logo {
     margin-right: 14px;
+    
+    a {
+      display: block;
+    }
 }
 
 /* ===============================
@@ -2210,6 +2214,8 @@ a.ecom-product-go-to-checkout-btn {
     .companyheader {
         max-width: 90%;
         padding-bottom: 30px;
+        position: relative;
+        z-index: 2;
     }
 
     /* NAV */
@@ -2221,13 +2227,14 @@ a.ecom-product-go-to-checkout-btn {
         float: none;
         margin-right: 0;
         margin-left: 0;
+        z-index: 1;
     }
 
      /* NAV ICON */
 
   .widget .extendednavigation a.pull {
     display: block;
-    width: 100%;
+    width: 45px;
     position: absolute;
     top: 11px;
   }
