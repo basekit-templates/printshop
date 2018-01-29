@@ -3,6 +3,7 @@
 	"thumbnail":"printshop.png",
 	"screenshot":"printshop-screenshot.jpg",
 	"templateType":"standard",
+	"pageTypes": ["home"],
     "tags": {
         "en": ["professional", "clean", "business", "modern", "newspaper", "agency", "leaflet", "creative", "elegant", "professional", "sophisticated", "media", "sans-serif"],
         "es": ["profesional", "limpio", "corporativo", "moderno", "periodico", "agencia", "folleto", "creativo", "elegante", "profesional", "sofisticado", "comunicacion", "sans-serif"],
