@@ -14,7 +14,7 @@
     {{widget('feature', 'featurehome', {"header": "profile", "strapline":"profile", "buttonText":"LOREM IPSUM","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '50','showBtn': true})|raw}}
 </section>
 
-<div class="main">
+<div class="main wrapper">
     {{zone('main')|raw}}
 </div>
 
@@ -25,7 +25,7 @@
             <div class="column columns-three-left">
                 {{widget('content', 'footercolumn1content1', {"content":'<h4>LOREM IPSUM</h4>'})|raw}}
 
-                {% if profile.companydescription|length > 0 %}
+                {% if profile.companydescription|length > 0 %}  
                    {{widget('profile', 'footercolumn1profilecompanydescription', { 'profileType':'companydescription', 'companydescription':'profile'})|raw}}
                 {% else %}
                     {{widget('content', 'footercolumn1content2', {"content":'<p>Integer a Tortor dui nullam nec antemi morbi sodales urna sit amet mauris.</p>'})|raw}}
